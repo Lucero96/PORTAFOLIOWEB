@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Lucero</title>
+  <meta name="description" content="Proyectos destacados de Lucero con enlaces a demos y repositorios.">
+  <!-- Fuentes & Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="app">
+    <header class="topbar" role="banner">
+      <button class="btn-toggle" id="btnMenu" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Principal">
+      <div class="brand">
+        <span class="brand__logo"></span>
+        <span class="brand__name">Lucero</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="navlink" href="index.html"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
+          <div class="divider"></div>
+          <li><a class="navlink" href="about.html"><i class="fa-regular fa-user"></i><span>Objetivos Profesional</span></a></li>
+          <li><a class="navlink" href="services.html"><i class="fa-solid fa-list"></i><span>Tecnologias</span></a></li>
+          <li><a class="navlink" href="portfolio.html"><i class="fa-solid fa-briefcase"></i><span>Proyectos destacados</span></a></li>
+          <li><a class="navlink" href="contact.html"><i class="fa-regular fa-comment"></i><span>Contacto</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content" id="contenido">
+      <div class="panel">
+        <section id="portfolio" class="portfolio">
+          <h2 class="section-title">Proyectos Destacados</h2>
+          <p class="subtitle">Aquí comparto 2 proyectos con sus enlaces a repositorios y demos.</p>
+
+          <div class="projects-grid">
+            <!-- Proyecto 1 -->
+            <article class="project-card">
+              <img src="imagenes/rutas.jpg" alt="Rutas seguras">
+              <div class="overlay">
+                <h3>Rutas seguras</h3>
+                <a href="https://github.com/Josed20/Rutas-seguras.git" class="btn-ghost" target="_blank" rel="noopener">Código</a>
+              </div>
+            </article>
+
+            <!-- Proyecto 2 -->
+            <article class="project-card">
+              <img src="imagenes/jake1.jpg" alt="Jake">
+              <div class="overlay">
+                <h3>Jake · Dispositivo electronico para ayudar a niños con disortografia</h3>
+                <a href="https://github.com/lulu1604/Jake-prime.git" class="btn-ghost" target="_blank" rel="noopener">Código</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

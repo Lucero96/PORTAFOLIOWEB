@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hobbies & Contact – Lucero</title>
+  <meta name="description" content="Intereses, hobbies y medios de contacto de Lucero.">
+  <!-- Fuentes & Iconos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="app">
+    <header class="topbar" role="banner">
+      <button class="btn-toggle" id="btnMenu" aria-label="Abrir menú" aria-controls="sidebar" aria-expanded="false">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </header>
+
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Principal">
+      <div class="brand">
+        <span class="brand__logo"></span>
+        <span class="brand__name">Lucero</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="navlink" href="index.html"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
+          <div class="divider"></div>
+          <li><a class="navlink" href="about.html"><i class="fa-regular fa-user"></i><span>Objetivos Profesional</span></a></li>
+          <li><a class="navlink" href="services.html"><i class="fa-solid fa-list"></i><span>Tecnologías</span></a></li>
+          <li><a class="navlink" href="portfolio.html"><i class="fa-solid fa-briefcase"></i><span>Proyectos destacados</span></a></li>
+          <li><a class="navlink active" href="contact.html"><i class="fa-regular fa-comment"></i><span>Contacto</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content" id="contenido">
+      <div class="panel">
+
+        <!-- HOBBIES / INTERESES EN TARJETAS -->
+        <section id="hobbies" class="contact">
+          <h2 class="section-title">Intereses / Hobbies</h2>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <i class="fa-solid fa-headphones"></i>
+              <h3>Escuchar música</h3>
+              <p>Me gusta escuchar música en mis tiempos libres para relajarme y desconectarme.</p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-laptop-code"></i>
+              <h3>Programar</h3>
+              <p>Practico front-end con mini-proyectos y retos.</p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-palette"></i>
+              <h3>Ilustración digital</h3>
+              <p>Exploro estilos minimalistas para usar en UI.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contact" class="contact">
+          <h2 class="section-title">Contáctame</h2>
+
+          <p class="contact-lead">¿Tienes alguna pregunta?</p>
+          <p class="contact-sublead">Estoy a tu servicio. Respondo muy rápido a los mensajes.</p>
+
+          <div class="contact-grid">
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <h3>Teléfono</h3>
+              <p>984 756 229</p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <h3>Ubicación</h3>
+              <p>Lima, Perú</p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:22200171@ue.edu.pe">22200171@ue.edu.pe</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/lucero96" target="_blank" rel="noopener">github.com/lucero96</a></p>
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <a class="btn-link" href="mailto:22200171@ue.edu.pe">Envíame un correo</a>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
