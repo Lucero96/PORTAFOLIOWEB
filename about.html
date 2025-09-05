@@ -13,6 +13,7 @@
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
   <div class="app">
     <!-- Topbar -->
     <header class="topbar" role="banner">
@@ -31,9 +32,10 @@
         <ul>
           <li><a class="navlink" href="index.html"><i class="fa-solid fa-house"></i><span>Inicio</span></a></li>
           <div class="divider"></div>
-          <li><a class="navlink active" href="about.html"><i class="fa-regular fa-user"></i><span>Objetivos Profesionales</span></a></li>
+          <li><a class="navlink active" href="about.html" aria-current="page"><i class="fa-regular fa-user"></i><span>Objetivos profesionales</span></a></li>
           <li><a class="navlink" href="services.html"><i class="fa-solid fa-list"></i><span>Tecnologías</span></a></li>
           <li><a class="navlink" href="portfolio.html"><i class="fa-solid fa-briefcase"></i><span>Proyectos destacados</span></a></li>
+          <li><a class="navlink" href="hobbies.html"><i class="fa-solid fa-heart"></i><span>Hobbies</span></a></li>
           <li><a class="navlink" href="contact.html"><i class="fa-regular fa-comment"></i><span>Contacto</span></a></li>
         </ul>
       </nav>
@@ -43,13 +45,12 @@
     <main class="content" id="contenido">
       <div class="panel">
         <section id="about" class="about">
-          <h2>Objetivos Profesionales</h2>
+          <h2>Objetivos profesionales</h2>
 
           <div class="timeline-card">
-            <ol class="timeline">
-
-              <!-- Corto plazo -->
-              <h3 class="timeline-subtitle">Corto Plazo</h3>
+            <!-- Corto plazo -->
+            <h3 id="plazo-corto" class="timeline-subtitle">Corto plazo</h3>
+            <ol class="timeline" aria-labelledby="plazo-corto">
               <li class="timeline-item">
                 <div class="dot"></div>
                 <div class="entry">
@@ -64,13 +65,15 @@
                 <div class="entry">
                   <h3 class="entry-title"><i class="fa-solid fa-laptop-code"></i> Participar en proyectos web profesionales</h3>
                   <p class="entry-desc">
-                    Integrarme a equipos de desarrollo donde pueda aportar en la maquetación responsive y en la mejora de la experiencia de usuario.
+                    Integrarme a equipos de desarrollo donde pueda aportar en maquetación responsive y en la mejora de la experiencia de usuario.
                   </p>
                 </div>
               </li>
+            </ol>
 
-              <!-- Mediano plazo -->
-              <h3 class="timeline-subtitle">Mediano Plazo</h3>
+            <!-- Mediano plazo -->
+            <h3 id="plazo-mediano" class="timeline-subtitle">Mediano plazo</h3>
+            <ol class="timeline" aria-labelledby="plazo-mediano">
               <li class="timeline-item">
                 <div class="dot"></div>
                 <div class="entry">
@@ -89,9 +92,11 @@
                   </p>
                 </div>
               </li>
+            </ol>
 
-              <!-- Largo plazo -->
-              <h3 class="timeline-subtitle">Largo Plazo</h3>
+            <!-- Largo plazo -->
+            <h3 id="plazo-largo" class="timeline-subtitle">Largo plazo</h3>
+            <ol class="timeline" aria-labelledby="plazo-largo">
               <li class="timeline-item">
                 <div class="dot"></div>
                 <div class="entry">
@@ -101,7 +106,6 @@
                   </p>
                 </div>
               </li>
-
             </ol>
           </div>
         </section>
